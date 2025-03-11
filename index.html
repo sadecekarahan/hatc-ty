@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HatCity - Şapka Mağazası</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- HEADER BÖLÜMÜ -->
+    <header>
+        <div class="logo-container">
+            <img src="Black White Minimal Simple Modern Creative Studio Ego Logo (1).png" alt="HatCity Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Ana Sayfa</a></li>
+                <li><a href="products.html">Ürünler</a></li>
+                <li><a href="about.html">Hakkımızda</a></li>
+               
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Şapka ara..." id="searchInput">
+            <button type="submit"><i class="search-icon">🔍</i></button>
+        </div>
+    </header>
+
+    <!-- ANA SAYFA İÇERİĞİ -->
+    <section class="banner-container">
+        <div class="banner-slider">
+            <div class="slide active">
+                <img src="banner12.png" alt="Yeni Sezon Şapkalar">
+                <div class="slide-content">
+                    <h2>Yeni Sezon Şapkalar</h2>
+                    <p>2025 İlkbahar/Yaz koleksiyonumuz burada!</p>
+                    <a href="products.html" class="btn">Hemen İncele</a>
+                   
+                </div>
+            </div>
+            <div class="slide">
+                <img src="bindirim.png" alt="Özel İndirimler">
+                <div class="slide-content">
+                    <h2>%25'e Varan İndirimler</h2>
+                    <p>Seçili ürünlerde sınırlı süre fırsatları</p>
+                    <a href="products.html" class="btn">İndirimleri Keşfet</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="BANNER.png" alt="Özel Tasarım Şapkalar">
+                <div class="slide-content">
+                    <h2>Özel Tasarım Şapkalar</h2>
+                    <p>Stilinizi tamamlayacak eşsiz tasarımlar</p>
+                    <a href="products.html" class="btn">Koleksiyonu Gör</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+        <button class="slide-button prev" onclick="changeSlide(-1)">❮</button>
+        <button class="slide-button next" onclick="changeSlide(1)">❯</button>
+    </section>
+
+    <!-- POPÜLER ÜRÜNLER BÖLÜMÜ -->
+    <section class="popular-products">
+        <h2>Popüler Şapkalarımız</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="kumas-deri-siperli-beyzbol-sapka-dd9a77.jpg" alt="Klasik Fötr Şapka">
+                    <div class="product-tag">En Çok Satan</div>
+                </div>
+                <div class="product-info">
+                    <h3>Klasik Fötr Şapka</h3>
+                    <p class="product-price">349 TL</p>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="kumas-deri-siperli-beyzbol-sapka-dd9a77.jpg" alt="Spor Beyzbol Şapkası">
+                    <div class="product-tag">Yeni</div>
+                </div>
+                <div class="product-info">
+                    <h3>Spor Beyzbol Şapkası</h3>
+                    <p class="product-price">249 TL</p>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="kumas-deri-siperli-beyzbol-sapka-dd9a77.jpg" alt="Vintage Kasket">
+                </div>
+                <div class="product-info">
+                    <h3>Vintage Kasket</h3>
+                    <p class="product-price">299 TL</p>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="kumas-deri-siperli-beyzbol-sapka-dd9a77.jpg" alt="Hasır Şapka">
+                    <div class="product-tag">İndirim</div>
+                </div>
+                <div class="product-info">
+                    <h3>Hasır Şapka</h3>
+                    <p class="product-price"><span class="old-price">399 TL</span> 299 TL</p>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </div>
+        </div>
+        <a href="products.html" class="view-all-btn">Tüm Ürünleri Gör</a>
+    </section>
+
+    <!-- ÖZELLİKLER BÖLÜMÜ -->
+    <section class="features">
+        <div class="feature">
+            <div class="feature-icon"></div>
+            <h3>Ücretsiz Kargo</h3>
+            <p>250 TL ve üzeri siparişlerde</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon"></div>
+            <h3>Kolay İade</h3>
+            <p>14 gün içinde ücretsiz iade</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon"></div>
+            <h3>Güvenli Ödeme</h3>
+            <p>SSL ile şifrelenmiş ödeme</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon"></div>
+            <h3>7/24 Destek</h3>
+            <p>Her zaman yanınızdayız</p>
+        </div>
+    </section>
+
+    <!-- FOOTER BÖLÜMÜ -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>HatCity</h3>
+                <p>2023'ten beri kaliteli şapka markası.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">📱</a>
+                    <a href="#" class="social-icon">📘</a>
+                    <a href="#" class="social-icon">📷</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Linkler</h3>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="products.html">Ürünler</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Kategoriler</h3>
+                <ul>
+                    <li><a href="#">Erkek Şapkalar</a></li>
+                    <li><a href="#">Kadın Şapkalar</a></li>
+                    <li><a href="#">Spor Şapkalar</a></li>
+                    <li><a href="#">Vintage Koleksiyon</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <p>Adres: Şapka Caddesi No:123, İstanbul</p>
+                <p>Telefon: 0212 345 67 89</p>
+                <p>E-posta: info@hatcity.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HatCity. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
