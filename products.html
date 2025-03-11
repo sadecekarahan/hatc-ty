@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünler - HatCity</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- HEADER BÖLÜMÜ -->
+    <header>
+        <div class="logo-container">
+            <img src="Black White Minimal Simple Modern Creative Studio Ego Logo (1).png" alt="HatCity Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="products.html" class="active">Ürünler</a></li>
+                <li><a href="about.html">Hakkımızda</a></li>
+               
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Şapka ara..." id="searchInput">
+            <button type="submit"><i class="search-icon">🔍</i></button>
+        </div>
+    </header>
+
+    <!-- ÜRÜNLER SAYFASI İÇERİĞİ -->
+    <div class="products-page">
+        <aside class="filters">
+            <h3>Filtreleme</h3>
+            <div class="filter-section">
+                <h4>Kategoriler</h4>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="cat-men">
+                        <label for="cat-men">Erkek Şapkaları</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="cat-women">
+                        <label for="cat-women">Kadın Şapkaları</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="cat-unisex">
+                        <label for="cat-unisex">Unisex</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="cat-children">
+                        <label for="cat-children">Çocuk Şapkaları</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-section">
+                <h4>Şapka Türü</h4>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="type-baseball">
+                        <label for="type-baseball">Beyzbol Şapkası</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="type-fedora">
+                        <label for="type-fedora">Fötr Şapka</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="type-newsboy">
+                        <label for="type-newsboy">Kasket</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="type-bucket">
+                        <label for="type-bucket">Bucket Hat</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="type-beret">
+                        <label for="type-beret">Bere</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="type-straw">
+                        <label for="type-straw">Hasır Şapka</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-section">
+                <h4>Fiyat Aralığı</h4>
+                <div class="price-range">
+                    <input type="range" min="0" max="1000" value="500" class="slider" id="priceRange">
+                    <div class="price-inputs">
+                        <input type="number" id="minPrice" placeholder="Min" value="0">
+                        <span>-</span>
+                        <input type="number" id="maxPrice" placeholder="Max" value="1000">
+                        <button class="apply-price">Uygula</button>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h4>Renk</h4>
+                <div class="color-filters">
+                    <span class="color-filter" style="background-color: black;" ></span>
+                    <span class="color-filter" style="background-color: white; border: 1px solid #ddd;"></span>
+                    <span class="color-filter" style="background-color: #ff6600;"></span>
+                    <span class="color-filter" style="background-color: blue;"></span>
+                    <span class="color-filter" style="background-color: red;"></span>
+                    <span class="color-filter" style="background-color: green;"></span>
+                </div>
+            </div>
+            <button class="clear-filters">Filtreleri Temizle</button>
+        </aside>
+        <main class="products-main">
+            <div class="products-header">
+                <h2>Tüm Şapkalar</h2>
+                <div class="products-sort">
+                    <label for="sort-select">Sırala:</label>
+                    <select id="sort-select">
+                        <option value="newest">En Yeniler</option>
+                        <option value="price-low">Fiyat (Düşükten Yükseğe)</option>
+                        <option value="price-high">Fiyat (Yüksekten Düşüğe)</option>
+                        <option value="popular">En Çok Satanlar</option>
+                    </select>
+                </div>
+            </div>
+            <div class="products-grid large-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="kumas-deri-siperli-beyzbol-sapka-dd9a77.jpg" alt="Klasik Fötr Şapka">
+                        <div class="product-tag">En Çok Satan</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Klasik Fötr Şapka</h3>
+                        <p class="product-price">349 TL</p>
+                        <button class="add-to-cart">Sepete Ekle</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="kumas-deri-siperli-beyzbol-sapka-dd9a77.jpg" alt="Spor Beyzbol Şapkası">
+                        <div class="product-tag">Yeni</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Beyzbol Şapkası</h3>
+                        <p class="product-price">249 TL</p>
+                        <button class="add-to-cart">Sepete Ekle</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="kumas-deri-siperli-beyzbol-sapka-dd9a77.jpg" alt="Vintage Kasket">
+                    </div>
+                    <div class="product-info">
+                        <h3>Vintage Kasket</h3>
+                        <p class="product-price">299 TL</p>
+                        <button class="add-to-cart">Sepete Ekle</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="kumas-deri-siperli-beyzbol-sapka-dd9a77.jpg" alt="Hasır Şapka">
+                        <div class="product-tag">İndirim</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hasır Şapka</h3>
+                        <p class="product-price"><span class="old-price">399 TL</span> 299 TL</p>
+                        <button class="add-to-cart">Sepete Ekle</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="kumas-deri-siperli-beyzbol-sapka-dd9a77.jpg" alt="Bucket Hat">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bucket Hat</h3>
+                        <p class="product-price">199 TL</p>
+                        <button class="add-to-cart">Sepete Ekle</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="kumas-deri-siperli-beyzbol-sapka-dd9a77.jpg" alt="Yün Bere">
+                    </div>
+                    <div class="product-info">
+                        <h3>Yün Bere</h3>
+                        <p class="product-price">129 TL</p>
+                        <button class="add-to-cart">Sepete Ekle</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="kumas-deri-siperli-beyzbol-sapka-dd9a77.jpg" alt="Panama Şapka">
+                    </div>
+                    <div class="product-info">
+                        <h3>Panama Şapka</h3>
+                        <p class="product-price">399 TL</p>
+                        <button class="add-to-cart">Sepete Ekle</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="kumas-deri-siperli-beyzbol-sapka-dd9a77.jpg" alt="Kışlık Bere">
+                        <div class="product-tag">Yeni Sezon</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kışlık Bere</h3>
+                        <p class="product-price">179 TL</p>
+                        <button class="add-to-cart">Sepete Ekle</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#" >2</a>
+                <a href="#" >3</a>
+                <a href="#" >4</a>
+                <a href="#" >5</a>
+                <a href="#" >6</a>
+                <a href="#" >7</a>
+                <a href="#" >8</a>
+                <a href="#" >&raquo;</a>
+            </div>
+        </main>
+    </div>
+
+    <!-- FOOTER BÖLÜMÜ -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>HatCity</h3>
+                <p>2023'ten beri kaliteli şapka markası.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">📱</a>
+                    <a href="#" class="social-icon">📘</a>
+                    <a href="#" class="social-icon">📷</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Linkler</h3>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="products.html">Ürünler</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Kategoriler</h3>
+                <ul>
+                    <li><a href="#">Erkek Şapkalar</a></li>
+                    <li><a href="#">Kadın Şapkalar</a></li>
+                    <li><a href="#">Spor Şapkalar</a></li>
+                    <li><a href="#">Vintage Koleksiyon</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <p>Adres: Şapka Caddesi No:123, İstanbul</p>
+                <p>Telefon: 0212 345 67 89</p>
+                <p>E-posta: info@hatcity.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HatCity. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+</body>
+</html>
